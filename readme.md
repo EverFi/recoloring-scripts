@@ -16,6 +16,7 @@ For PC instructions, refer to [Adobe's Support Portal](https://helpx.adobe.com/p
 
 ### Create the CSV File
 The CSV file can live anywhere on your machine, but must be of the format:
+
 |Old Value|New Value|
 |---|---|
 |#123456|#654321|
