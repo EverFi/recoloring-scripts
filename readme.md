@@ -2,6 +2,7 @@
 These scripts are for recoloring paths in Illustrator and Photoshop.  Two scripts are included:
 - **Open Smart Vector Graphics (Photoshop):** Opens all of the PSD files in a given directory, locates the smart vector graphics in the files, and opens them in Illustrator.
 - **Recolor All Open AI Docs (Illustrator):** Asks for a CSV (see example CSV) containing the old and new hex values.  Recolors any open files in Illustrator using the hex values provided in the CSV, and then saves the files.  
+- **Convert Folder of AI Files to SVG (Illustrator):** Asks for a folder filled with AI files and converts them to SVGs, saving them in another specified folder.
 
 You may run the scripts independently of one another.
 
@@ -9,7 +10,7 @@ You may run the scripts independently of one another.
 On a Mac,
 - Download the scripts by clicking "Download Zip" above.  (Or clone the repo).
 - Move `Open Smart Vector Graphics.jsx` and into your `/Applications/Adobe Photoshop CC 2017/Presets/Scripts` folder.
-- Move `Recolor All Open AI Docs.jsx` into your `/Applications/Adobe Illustrator CC 2017/Presets.localized/en_US/Scripts` folder.  (On my machine there is a Presets.localized folder, but it shows in the Finder as just "Presets").  If you are using an older version of the Adobe Suite, find the corresponding folder in your Applications folder.
+- Move `Recolor All Open AI Docs.jsx` and `Convert Folder of AI files to SVG.jsx` into your `/Applications/Adobe Illustrator CC 2017/Presets.localized/en_US/Scripts` folder.  (On my machine there is a Presets.localized folder, but it shows in the Finder as just "Presets").  If you are using an older version of the Adobe Suite, find the corresponding folder in your Applications folder.
 - Restart Illustrator and Photoshop.
 
 For PC instructions, refer to [Adobe's Support Portal](https://helpx.adobe.com/photoshop/using/scripting.html) for the install location.
@@ -32,14 +33,21 @@ The CSV file can live anywhere on your machine, but must be of the format:
 ##### Open Smart Vector Graphics (Photoshop)
 - Copy the PSDs you want to recolor into a folder (be careful not to use the originals!)
 - Open Illustrator and Photoshop and be sure there are no open files in either program.
-- Navigate to `File > Scripts > Open Smart Vector Graphics` in the Photoshop menu.  If you do not see the script in the menu, be sure you moved the files as mentioned above.  Alternatively, you can click "Other Script" and locate the script as needed.
+- Navigate to `File > Scripts > Open Smart Vector Graphics` in the Photoshop menu.  If you do not see the script in the menu, be sure you moved the files as mentioned above and restarted the program.  Alternatively, you can click "Other Script" and locate the script as needed.
 - The script will ask you for the folder containing the PSD files.  Only `.psd` files will be opened!
 - When complete, you should see each smart vector graphic open in Illustrator.
 
 ##### Recolor All Open AI Docs (Illustrator)
-- With AI files open, run the script by navigating to `File > Scripts > Recolor All Open AI Docs`.  If you do not see the script in the menu, be sure you moved the files as mentioned above.  Alternatively, you can click "Other Script" and locate the script as needed.
+- With AI files open, run the script by navigating to `File > Scripts > Recolor All Open AI Docs`.  If you do not see the script in the menu, be sure you moved the files as mentioned above and restarted the program.  Alternatively, you can click "Other Script" and locate the script as needed.
 - The script will ask you for the CSV containing the old and new hex values.
 - When complete, the script should notify you of the number of paths that have changed color.
+
+#### Convert Folder of AI Files to SVG.jsx
+- You can run this script without having any files open (this is different from Illustrator's built in SVG script `SaveDocsAsSVG` which will save any open docs as SVGs).
+- Run the script by navigating to `File > Scripts > Convert Folder of AI Files to SVG`.  If you do not see the script in the menu, be sure you moved the files as mentioned above and restarted the program.  Alternatively, you can click "Other Script" and locate the script as needed.
+- The script will ask you to choose a folder containing AI files.  Only `.ai` files will be opened!
+- The script will then ask you where to save the SVGs.
+- When complete, you should have a folder containing all of the SVGs.
 
 ### Notes
 - Illustrator and Photoshop need to be running to run the Photoshop script.
