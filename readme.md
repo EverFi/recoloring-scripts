@@ -1,5 +1,5 @@
 # Recoloring Scripts
-These scripts are for recoloring paths in Illustrator and Photoshop.  Two scripts are included:
+These scripts are for recoloring paths in Illustrator and Photoshop.  Three scripts are included:
 - **Open Smart Vector Graphics (Photoshop):** Opens all of the PSD files in a given directory, locates the smart vector graphics in the files, and opens them in Illustrator.
 - **Recolor All Open AI Docs (Illustrator):** Asks for a CSV (see example CSV) containing the old and new hex values.  Recolors any open files in Illustrator using the hex values provided in the CSV, and then saves the files.  
 - **Convert Folder of AI Files to SVG (Illustrator):** Asks for a folder filled with AI files and converts them to SVGs, saving them in another specified folder.
@@ -42,7 +42,7 @@ The CSV file can live anywhere on your machine, but must be of the format:
 - The script will ask you for the CSV containing the old and new hex values.
 - When complete, the script should notify you of the number of paths that have changed color.
 
-#### Convert Folder of AI Files to SVG.jsx
+##### Convert Folder of AI Files to SVG.jsx
 - You can run this script without having any files open (this is different from Illustrator's built in SVG script `SaveDocsAsSVG` which will save any open docs as SVGs).
 - Run the script by navigating to `File > Scripts > Convert Folder of AI Files to SVG`.  If you do not see the script in the menu, be sure you moved the files as mentioned above and restarted the program.  Alternatively, you can click "Other Script" and locate the script as needed.
 - The script will ask you to choose a folder containing AI files.  Only `.ai` files will be opened!
